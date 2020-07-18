@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background: #282a36;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+header {
+  padding: 32px;
+  border-bottom: 1px solid #333;
+  background: rgba(0, 0, 0, 0.1);
+}
+/* STYLE LINKS */
+
+.links {
+  text-align: center;
+  
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 28px;
+  margin: 0 16px;
+}
+
+.links a:hover {
+  color: rgb(148, 241, 187);
+  transition: 300ms;
+  font-size: 19px;
+}
+
+.links img {
+  height: 40px;
+  border-radius: 50%;
+  -webkit-box-shadow: 4px 4px 6px rgb(148, 241, 187); 
+     -moz-box-shadow: 4px 4px 6px rgb(148, 241, 187);
+          box-shadow: 4px 4px 6px rgb(148, 241, 187);
+}
+
+/* HOVER IMAGE FOOTER */
+
+.links img:hover {
+  height: 42px;
+  transition: 300ms;
+}
+
+
+/* STYLE TECHNOLOGIES */
+
+h3 #node {
+  color: #0aa030;
+  text-decoration: none;
+}
+
+h3 #react, #react-native {
+  color: rgb(6, 167, 167);
+  text-decoration: none;
+}
+
+/* hover style technologies */
+
+h3 #node:hover {
+  color: #09ff47;
+  transition: 300ms;
+}
+
+h3 #react:hover, #react-native:hover {
+  color: aqua;
+  transition: 300ms;
+}
+
+/* STYLE WRAPPER */
+
+.wrapper {
+  text-align: center;
+  padding: 50px;
+}
+
+.wrapper img {
+  height: 500px;
+  border-radius: 65px;
+}
+
+/* HOVER IMG */
+.wrapper img:hover {
+  max-width: 403px;
+  border-radius: 65px;
+  transition: 300ms;
+  -webkit-box-shadow: 4px 4px 6px rgb(148, 241, 187); 
+     -moz-box-shadow: 4px 4px 6px rgb(148, 241, 187);
+          box-shadow: 4px 4px 6px rgb(148, 241, 187);
+}
+
+.wrapper h1 {
+  padding: 14px;
+  color: rgba(255, 255, 255, 0.877); 
+  font-weight: 800;
+}
+
+.wrapper h2 {
+  color: rgba(255, 255, 255, 0.658);
+  padding: 8px;
+  font-weight: 700;
+}
+
+.wrapper h3 {
+    color: rgba(255, 255, 255, 0.603);
+    padding: 8px;
+    font-weight: 600;
+}
+
+.wrapper h2 a {
+  color: rgb(6, 167, 167);
+  text-decoration: none;
+}
+
+/* HOVER FACULDADE */
+.wrapper h2 a:hover {
+  color: rgba(255, 255, 255, 0.603);;
+  text-decoration: none;
+  transition: 300ms;
+}
+
+
+
+
