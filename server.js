@@ -2,10 +2,14 @@ const express = require('express');
 const nunjucks = require('nunjucks');
 const server = express();
 
-server.set('view engine', 'html');
 server.use(express.static('public'));
+
+
+
+server.set('view engine', 'html');
+
 // CONFIGURATIONS
-nunjucks.configure("/src/views", {
+nunjucks.configure("views", {
 express: server
 });
 
