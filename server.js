@@ -18,8 +18,13 @@ express: server
 // ROUTES
 server.get('/', function(request, response){
   return response.render('index');
+});
 
-})
+server.get('/videos', function(request, response){
+  return response.render('videos');
+});
+
+
 
 // PORT
 server.listen(5000, function() {
