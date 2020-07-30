@@ -1,9 +1,19 @@
 const express = require('express');
+const nunjucks = require('nunjucks');
 const server = express();
+
+server.set('view engine', 'html');
+server.use(express.static('public'));
+// CONFIGURATIONS
+nunjucks.configure("/src/views", {
+express: server
+});
+
+
 
 // ROUTES
 server.get('/', function(request, response){
-  return response.send('hello Word');
+  return response.render('index');
 
 })
 
