@@ -2,7 +2,16 @@
   "name": "Launchbase-personal-website",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
   "repository": "https://github.com/OdilonLimaNeto/Launchbase-personal-website.git",
   "author": "OdilonLimaNeto <odilongeronimoo@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
