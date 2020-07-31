@@ -6,7 +6,7 @@ server.use(express.static('public'));
 
 
 
-server.set('view engine', 'html');
+server.set('view engine', 'njk');
 
 // CONFIGURATIONS
 nunjucks.configure("views", {
