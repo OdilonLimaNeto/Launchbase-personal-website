@@ -1,150 +1,131 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <!-- INITIAL TAB TITLE -->
-    <title>Odilon Lima</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500&display=swap">
+{% extends "layout.html" %}
+
+    {% block content %}
+    <!-- PRESENTATION -->
+            <div class="wrapper">
+            <h1>Meus videos favoritos</h1>
+            </div>
+
+            <section class="cards">
+                <div class="card" id="RlK8nu_YErc">
+                    <div class="image-videos">
+                        <img src="https://img.youtube.com/vi/RlK8nu_YErc/maxresdefault.jpg" alt="Perguntas e resposta PR">
+                    </div>
+
+                    <div class="video-content">
+                        <p>Design UX/UI, Home Office, Dev em Cidade Pequena, Portfólio, Insegurança | #PR 11</p>
+                    </div>
+
+                    <div class="video-information">
+                        <p>13:58</p>
+                        <p class="card-price">Free</p>
+                    </div>
+                </div>  
+
+                <div class="card" id="rCeGfFk-uCk">
+                    <div class="image-videos">
+                        <img src="https://img.youtube.com/vi/rCeGfFk-uCk/maxresdefault.jpg" alt="Code Drops">
+                    </div>
+
+                    <div class="video-content">
+                        <p>Setup para apps Node.js (TypeScript, ESLint, Jest, Babel) | Code/Drops #33</p>
+                    </div>
+
+                    <div class="video-information">
+                        <p>45:38</p>
+                        <p class="card-price">Free</p>
+                    </div>
+                </div>
+
+                <div class="card" id="eUwiTnK0EA0">
+                    <div class="image-videos">
+                        <img src="https://img.youtube.com/vi/eUwiTnK0EA0/maxresdefault.jpg" alt="Live Quando me tornei programador">
+                    </div>
+
+                    <div class="video-content">
+                        <p>LIVE: Quando me tornei um Programador Profissional (A História de 16 Programadores)</p>
+                    </div>
+
+                    <div class="video-information">
+                        <p>03:28</p>
+                        <p class="card-price">Free</p>
+                    </div>
+                </div>
+
+                <div class="card" id="2iS3SHwft0k">
+                    <div class="image-videos">
+                        <img src="https://img.youtube.com/vi/2iS3SHwft0k/maxresdefault.jpg" alt="ORMS">
+                    </div>
+
+                    <div class="video-content">
+                        <p>Prisma 2: Automatize o acesso ao banco de dados | Code/Drops #29</p>
+                    </div>
+
+                    <div class="video-information">
+                        <p>31:54</p>
+                        <p class="card-price">Free</p>
+                    </div>
+                </div>
+
+                <div class="card" id="BvhYm0BOLvA">
+                    <div class="image-videos">
+                        <img src="https://img.youtube.com/vi/BvhYm0BOLvA/maxresdefault.jpg" alt="Dark Mode">
+                    </div>
+
+                    <div class="video-content">
+                        <p>Dark Mode raiz com CSS e JavaScript | Code/Drops #24</p>
+                    </div>
+
+                    <div class="video-information">
+                        <p>17:34</p>
+                        <p class="card-price">Free</p>
+                    </div>
+                </div>
+
+                <div class="card" id="nhW70H9H4gU">
+                    <div class="image-videos">
+                        <img src="https://img.youtube.com/vi/nhW70H9H4gU/maxresdefault.jpg" alt="Box Model">
+                    </div>
+
+                    <div class="video-content">
+                        <p>Espaçamentos e a mágica do CSS Box Model | Masterclass #10</p>
+                    </div>
+
+                    <div class="video-information">
+                        <p>39:11</p>
+                        <p class="card-price">Free</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- MODAL -->
+            <div class="modal-overlay">
+                <div class="modal">
+                    <a class="close-modal">
+                        <i class="material-icons">close</i>
+                    </a>
+
+                <div class="modal-content">
+                    <iframe src="" frameborder="0"></iframe>
+                </div>
+                </div>
+            </div>
+
+            <!-- FOOTER -->
+            <div class="links footer">
+            <!-- Github -->
+            <a href="https://github.com/OdilonLimaNeto" target="blank">
+            <img src="/assets/github.png" alt="Github"></a>
+
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/profile.php?id=100009148764045" target="blank">
+                <img src="/assets/facebook.png" alt=" Facebook"></a>
+
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/odilonlimaneto/" target="blank">
+                <img src="/assets/linkedIn.png" alt=" LinkedIn"></a>     
+            </div>
     
-    <!-- REFERENCY CSS -->
-    <link rel="stylesheet" href="/styles.css">
-  </head>
-
-  <body>
-    <!-- HEADER -->
-    <header>
-      <div class="links">
-        <a href="/index.html">Sobre</a>
-        <a href="/videos.html">Videos</a>
-
-      </div>
-    </header>
-
-<!-- PRESENTATION -->
-    <div class="wrapper">
-      <h1>Meus videos favoritos</h1>
-    </div>
-
-    <section class="cards">
-        <div class="card" id="RlK8nu_YErc">
-            <div class="image-videos">
-                <img src="https://img.youtube.com/vi/RlK8nu_YErc/maxresdefault.jpg" alt="Perguntas e resposta PR">
-            </div>
-
-            <div class="video-content">
-                <p>Design UX/UI, Home Office, Dev em Cidade Pequena, Portfólio, Insegurança | #PR 11</p>
-            </div>
-
-            <div class="video-information">
-                <p>13:58</p>
-                <p class="card-price">Free</p>
-            </div>
-        </div>  
-
-        <div class="card" id="rCeGfFk-uCk">
-            <div class="image-videos">
-                <img src="https://img.youtube.com/vi/rCeGfFk-uCk/maxresdefault.jpg" alt="Code Drops">
-            </div>
-
-            <div class="video-content">
-                <p>Setup para apps Node.js (TypeScript, ESLint, Jest, Babel) | Code/Drops #33</p>
-            </div>
-
-            <div class="video-information">
-                <p>45:38</p>
-                <p class="card-price">Free</p>
-            </div>
-        </div>
-
-        <div class="card" id="eUwiTnK0EA0">
-            <div class="image-videos">
-                <img src="https://img.youtube.com/vi/eUwiTnK0EA0/maxresdefault.jpg" alt="Live Quando me tornei programador">
-            </div>
-
-            <div class="video-content">
-                <p>LIVE: Quando me tornei um Programador Profissional (A História de 16 Programadores)</p>
-            </div>
-
-            <div class="video-information">
-                <p>03:28</p>
-                <p class="card-price">Free</p>
-            </div>
-        </div>
-
-        <div class="card" id="2iS3SHwft0k">
-            <div class="image-videos">
-                <img src="https://img.youtube.com/vi/2iS3SHwft0k/maxresdefault.jpg" alt="ORMS">
-            </div>
-
-            <div class="video-content">
-                <p>Prisma 2: Automatize o acesso ao banco de dados | Code/Drops #29</p>
-            </div>
-
-            <div class="video-information">
-                <p>31:54</p>
-                <p class="card-price">Free</p>
-            </div>
-        </div>
-
-        <div class="card" id="BvhYm0BOLvA">
-            <div class="image-videos">
-                <img src="https://img.youtube.com/vi/BvhYm0BOLvA/maxresdefault.jpg" alt="Dark Mode">
-            </div>
-
-            <div class="video-content">
-                <p>Dark Mode raiz com CSS e JavaScript | Code/Drops #24</p>
-            </div>
-
-            <div class="video-information">
-                <p>17:34</p>
-                <p class="card-price">Free</p>
-            </div>
-        </div>
-
-        <div class="card" id="nhW70H9H4gU">
-            <div class="image-videos">
-                <img src="https://img.youtube.com/vi/nhW70H9H4gU/maxresdefault.jpg" alt="Box Model">
-            </div>
-
-            <div class="video-content">
-                <p>Espaçamentos e a mágica do CSS Box Model | Masterclass #10</p>
-            </div>
-
-            <div class="video-information">
-                <p>39:11</p>
-                <p class="card-price">Free</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- MODAL -->
-    <div class="modal-overlay">
-        <div class="modal">
-            <a class="close-modal">
-                <i class="material-icons">close</i>
-            </a>
-
-        <div class="modal-content">
-            <iframe src="" frameborder="0"></iframe>
-        </div>
-        </div>
-    </div>
-
-    <!-- FOOTER -->
-    <div class="links footer">
-      <!-- Github -->
-      <a href="https://github.com/OdilonLimaNeto" target="blank">
-      <img src="/assets/github.png" alt="Github"></a>
-
-      <!-- Facebook -->
-      <a href="https://www.facebook.com/profile.php?id=100009148764045" target="blank">
-        <img src="/assets/facebook.png" alt=" Facebook"></a>
-
-      <!-- LinkedIn -->
-      <a href="https://www.linkedin.com/in/odilonlimaneto/" target="blank">
-        <img src="/assets/linkedIn.png" alt=" LinkedIn"></a>     
-    </div>
-
-    <script src="/public/scripts.js"></script>
-  </body>
-</html>
+            <script src="/public/scripts.js"></script>
+                
+    {% endblock %}

@@ -17,7 +17,7 @@ express: server
 
 // ROUTES
 server.get('/', function(request, response){
-  return response.render('index');
+  return response.render('about');
 });
 
 server.get('/videos', function(request, response){
