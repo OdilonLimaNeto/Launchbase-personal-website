@@ -17,7 +17,7 @@
                 {% for card in videos %}
 
                     <div class="card" id="{{card.id}}">
-                        <div class="image-videos {{ 'featured-wapper' if card.featured }}">
+                        <div class="image-videos {{ 'featured-wrapper' if card.featured }}">
                             <img src="https://img.youtube.com/vi/{{card.id}}/maxresdefault.jpg" alt="{{card.title}}">
                             {% if card.featured %}
                             <div class="featured">Featured</div>
