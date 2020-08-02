@@ -19,6 +19,9 @@
                     <div class="card" id="{{card.id}}">
                         <div class="image-videos">
                             <img src="https://img.youtube.com/vi/{{card.id}}/maxresdefault.jpg" alt="{{card.title}}">
+                            {% if card.featured %}
+                            <div class="featured">Featured</div>
+                            {% endif %}
                         </div>
 
                         <div class="video-content">

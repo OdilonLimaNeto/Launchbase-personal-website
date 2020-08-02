@@ -3,7 +3,8 @@ module.exports = [
     id: 'RlK8nu_YErc',
     title: 'Design UX/UI, Home Office, Dev em Cidade Pequena, Portfólio, Insegurança | #PR 11',
     duration: '13:58',
-    price: 'Free'
+    price: 'Free',
+    featured: true
   },
 
   {
@@ -17,7 +18,8 @@ module.exports = [
     id: 'eUwiTnK0EA0',
     title: 'LIVE: Quando me tornei um Programador Profissional (A História de 16 Programadores)',
     duration: '03:28',
-    price: 'Free'
+    price: 'Free',
+    featured: true
   },
 
   {
@@ -31,7 +33,8 @@ module.exports = [
     id: 'BvhYm0BOLvA',
     title: 'Dark Mode raiz com CSS e JavaScript | Code/Drops #24',
     duration: '17:34',
-    price: 'Free'
+    price: 'Free',
+    featured: true
   },
 
   {

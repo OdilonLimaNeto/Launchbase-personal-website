@@ -233,6 +233,22 @@ iframe {
   top: 5%;
 }
 
+/* FEATURED */
 
+.image-videos {
+  position: relative;
+}
+.featured {
+  background: #5ddf7d;
+  color: #111111;
+  padding: 2px 8px;
+  position: absolute;
+  left: 25px;
+  border-radius: 16px;
+  top: -10px;
+  -webkit-box-shadow: 4px 4px 6px rgb(148, 241, 187); 
+  -moz-box-shadow: 4px 4px 6px rgb(148, 241, 187);
+       box-shadow: 4px 4px 6px rgb(148, 241, 187);
+}
 
 
