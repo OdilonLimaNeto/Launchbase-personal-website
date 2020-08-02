@@ -1,6 +1,7 @@
 const express = require('express');
 const nunjucks = require('nunjucks');
-const database = require('./database')
+const database = require('./database');
+const { query } = require('express');
 const server = express();
 
 server.use(express.static('public'));
@@ -12,7 +13,8 @@ server.set('view engine', 'njk');
 // CONFIGURATIONS
 nunjucks.configure("views", {
 express: server,
-autoescape: false
+autoescape: false,
+noCache: true
 });
 
 
@@ -37,6 +39,21 @@ server.get('/videos', function(request, response){
   return response.render('videos', { videos: database });
 });
 
+server.get('/video', function(request, response) {
+  const id = request.query.id;
+
+  const video = database.find(function(video) {
+    if(video.id == id) {
+      return true;
+    }
+})
+
+if(!video) {
+  return send('Video not found')
+}
+
+return response.render('video', { card: video });
+});
 
 
 // PORT

@@ -2,26 +2,19 @@
 {% extends "layout.njk" %}
 
     {% block head %}
-    <title>Odilon Lima | Videos</title>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>{{card.title}}</title>
     {% endblock %}
 
     {% block content %}
     <!-- PRESENTATION -->
             <div class="wrapper">
-            <h1>Meus videos favoritos</h1>
+            <h1>{{card.title}}</h1>
             </div>
 
-            <section class="cards">
-
-                {% for card in videos %}
-
+            <section class="video">
                     <div class="card" id="{{card.id}}">
-                        <div class="image-videos {{ 'featured-wapper' if card.featured }}">
-                            <img src="https://img.youtube.com/vi/{{card.id}}/maxresdefault.jpg" alt="{{card.title}}">
-                            {% if card.featured %}
-                            <div class="featured">Featured</div>
-                            {% endif %}
+                        <div class="video-container">
+                            <iframe src="http://www.youtube.com/embed/{{card.id}}" frameborder="0"></iframe>
                         </div>
 
                         <div class="video-content">
@@ -33,20 +26,7 @@
                             <p class="card-price">{{card.price}}</p>
                         </div>
                     </div> 
-                {% endfor %}
             </section>
-
-            <!-- MODAL -->
-            <div class="modal-overlay">
-                <div class="modal">
-                    <a class="close-modal">
-                        <i class="material-icons">close</i>
-                    </a>
-
-                <div class="modal-content">
-                </div>
-                </div>
-            </div>
 
             <!-- FOOTER -->
             <div class="links footer">
@@ -62,6 +42,5 @@
             <a href="https://www.linkedin.com/in/odilonlimaneto/" target="blank">
                 <img src="/assets/linkedIn.png" alt=" LinkedIn"></a>     
             </div>
-        <script src="/scripts.js"></script>
     {% endblock %}
     
