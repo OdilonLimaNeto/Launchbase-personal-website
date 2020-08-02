@@ -7,26 +7,20 @@
 {% block content %}
 <!-- PRESENTATION -->
     <div class="wrapper">
-      <img src="/assets/ODILON.jpeg" alt="Odilon">
-      <h1>Odilon Lima</h1>
+      <img src="{{about.avatarURL}}" alt="Odilon">
+      <h1>{{about.name}}</h1>
       <h2>Estudante de Sistemas de informação no <a href="https://www.uninorteac.edu.br/" target="blank">Centro universitário uninorte</a></h2>
       <h3>Entusiasta das tecnologias <a id="node" href="https://nodejs.org/en/" target="blank">Node.js</a>, <a id="react" href="https://pt-br.reactjs.org/" target="blank">React</a> e <a id="react-native" href="https://reactnative.dev/" target="blank">React Native</a></h3>
     </div>
 
     <!-- FOOTER -->
     <div class="links">
-      <!-- Github -->
-      <a href="https://github.com/OdilonLimaNeto" target="blank">
-      <img src="/assets/github.png" alt="Github"></a>
-
-      <!-- Facebook -->
-      <a href="https://www.facebook.com/profile.php?id=100009148764045" target="blank">
-        <img src="/assets/facebook.png" alt=" Facebook"></a>
-
-      <!-- LinkedIn -->
-      <a href="https://www.linkedin.com/in/odilonlimaneto/" target="blank">
-        <img src="/assets/linkedIn.png" alt=" LinkedIn"></a>     
+      {% for link in about.links %}
+        <a href="{{link.url}}" target="blank">
+        <img src="{{link.name}}" alt="Github"></a>
+      {% endfor %}
     </div>
+
 
 {% endblock %}
 

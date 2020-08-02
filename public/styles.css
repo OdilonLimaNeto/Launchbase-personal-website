@@ -151,12 +151,14 @@ h3 #react:hover, #react-native:hover {
 
 .card {
   background-color: #7159c1;
+  display: grid;
 }
 
 .video-content,
 .video-information {
   padding: 10px;
   font-size: 19px;
+  align-items: center;
 }
 
 .video-information {
