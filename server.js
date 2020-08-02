@@ -28,6 +28,7 @@ server.get('/', function(request, response){
     ],
   }
   return response.render('about', { about });
+  
 });
 
 server.get('/videos', function(request, response){
